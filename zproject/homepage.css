@@ -1,0 +1,113 @@
+
+
+@font-face {
+  font-family:"Raleway-bold";
+  src:url(../fonts/Raleway-Bold.ttf)
+}
+@font-face {
+  font-family:"Raleway-extrabold";
+  src:url(../fonts/Raleway-ExtraBold.ttf)
+}
+
+
+  :root {
+      --primary:#EEBF00;
+      --secondary:#232B38;
+  }
+
+
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:  30px 10%;
+    height: 20px;
+    background-color: #232B38;
+    overflow:hidden;
+}
+.logo{
+    background-color:#232B38;
+    cursor: pointer;
+    margin-right:auto ;
+    float: right;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .topnav a {
+      float: none;
+      display: block;
+    }
+  }
+.hero{
+  margin-top: 10%;
+}
+.hero h1{
+  font-family:"Raleway-extrabold";
+  color:var(--secondary);
+  font-size: 2.5rem;
+  margin-bottom:0.75rem;
+}
+.hero h1 span{
+  color:var(--primary);
+}
+.hero p{
+  font-family: "Raleway-bold";
+  width:50%;
+  line-height:1.5;
+  margin-bottom:1rem;
+}
+.hero .box .welcome span{
+  font-family: "Raleway-extrabold";
+}
+
+
+  .hero .hero-image{
+    float: right;
+    margin-right: 10%;
+    }
+    .hero .box{
+      float: left;
+      margin-left: 10%;
+    }
+
+    body{
+      background-image:url("./hero.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
